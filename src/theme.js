@@ -1,19 +1,19 @@
-import { extendTheme } from "@chakra-ui/react"
+import {extendTheme} from '@chakra-ui/react';
 
-const theme = extendTheme({
-    fonts: {
-     body: "Lato, sans serif",
-    },
-    textStyles: {
-        logoStyles: {
-            fontWeight: '700',
-        }
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+};
 
-    },
-    colors: {
-        primary: '#1DB954',
-        BtnHover: '#168a3f'
-    }
-  })
+const theme = extendTheme ({
+  config,
+  colors: {
+    primary: '#1DB954',
+    darkGreen: '#168a3f',
+  },
+  fonts: {
+    body: 'Lato, sans serif',
+  },
+});
 
-  export default theme
+export default theme;
